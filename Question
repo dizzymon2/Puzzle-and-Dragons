@@ -19,12 +19,9 @@ for name in names{
 }
 
 // 대문자로 바꾸기
-for name in names{
-    print(name.uppercased())
-}
+names.map({ print("\($0.uppercased())")})
 
 
 // 첫문자 출력
-for name in names{
-    print (name.characters.first!)
-}
+
+names.map({ print("\($0.characters.first!)")})
