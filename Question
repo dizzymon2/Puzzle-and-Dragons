@@ -9,14 +9,11 @@ let names = ["Leonerd", "Sheldon", "Penny", "Raju"]
 
 
 // 문자열 뒤집기
-for name in names{
-    
-    var sortname:String = ""
-    for char in name.characters{
-        sortname = String(char) + sortname
-    }
-    print(sortname)
+func reverseName(name:String) -> String {
+    return String(name.characters.reversed())
 }
+
+names.map(reverseName)
 
 // 대문자로 바꾸기
 names.map({ print("\($0.uppercased())")})
