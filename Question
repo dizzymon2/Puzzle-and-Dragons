@@ -1,0 +1,30 @@
+
+
+import UIKit
+
+var str = "Hello, playground"
+
+let names = ["Leonerd", "Sheldon", "Penny", "Raju"]
+
+
+
+// 문자열 뒤집기
+for name in names{
+    
+    var sortname:String = ""
+    for char in name.characters{
+        sortname = String(char) + sortname
+    }
+    print(sortname)
+}
+
+// 대문자로 바꾸기
+for name in names{
+    print(name.uppercased())
+}
+
+
+// 첫문자 출력
+for name in names{
+    print (name.characters.first!)
+}
